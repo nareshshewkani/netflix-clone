@@ -1,0 +1,70 @@
+.navbar {
+    color: white;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+        img {
+            height: 25px;
+            width: 100px;
+            margin-right: 20px;
+        }
+    }
+    
+    .right {
+        display: flex;
+        align-items: center;
+        img {
+            border-radius: 50%;
+            height: 50px;
+            object-fit: cover; 
+            // Read more at https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
+            cursor: pointer;
+        }
+    }
+
+    span {
+        margin: 0 15px;
+        cursor: pointer;
+    }
+
+    .profile {
+        margin-right: 50px;
+        .options {
+            display: none;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid black;
+            color: black;
+        }
+
+        &:hover {
+            .options {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+            }
+
+        }
+
+        span {
+            padding: 10px;
+            &:hover {
+                opacity: 80%;
+            }
+        }
+        
+    }
+
+}
